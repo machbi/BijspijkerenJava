@@ -1,5 +1,7 @@
 package nl.pro;
 
+import java.util.Scanner;
+
 public class Main {
         public static void main (String[] args){
             System.out.println("Opdracht 1.1");
@@ -55,6 +57,5 @@ public class Main {
             //souts
             System.out.println("De oppervlakte = " + (lengte * breedte));
             System.out.println("De omtrek = " + (2 * (lengte + breedte)));
-
     }
 }
