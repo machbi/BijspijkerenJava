@@ -1,9 +1,13 @@
 import java.util.Scanner;
 
-public class h2 {
+public class H2 {
         public static void main (String[] args){
 
             Scanner scanner = new Scanner(System.in);
+
+//            //testje
+//            double testje = Math.round();
+//            System.out.println(testje);
 
             // 2.1
             System.out.println("Opdracht 2.1");
@@ -30,7 +34,7 @@ public class h2 {
             System.out.println("Dan ben je nu ongeveer " + totaalMinuten + " minuten oud.");
 
             // Opdracht 2.3
-            // Waarom is het zo dat als ik bij rentepercentage 1komma2 invul ipv 1punt2 hij flipt?
+            // Waarom is het zo dat als ik bij rentepercentage 1komma2 invul ipv 1punt2 hij flipt? Foutmelding is apart
             System.out.println("\nOpdracht 2.3");
             System.out.println("Typ het startbedrag: ");
             double startbedrag = scanner.nextDouble();
