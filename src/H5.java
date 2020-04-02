@@ -65,30 +65,59 @@ public class H5 {
 //        }
 //        System.out.println("Het laagst ingevoerde cijfer is: " + laagsteCijfer);
 
-            //Opdracht 5.5
-        System.out.println("\nOpdracht 5.5");
-        String leerling = "onbekend";
-        String naam = "dubbel";
-        double hoogsteCijfer = 0;
-        double behaaldeCijfer;
+//            //Opdracht 5.5
+//        System.out.println("\nOpdracht 5.5");
+//        String leerling = "onbekend";
+//        String naam = "dubbel";
+//        double hoogsteCijfer = 0;
+//        double behaaldeCijfer;
+//
+//        for (int i = 1; i < 6; i++) {
+//            System.out.println("Hoe heet de " + i + "e student?");
+//           naam =  scanner.nextLine();
+//            System.out.println("Wat was het cijfer van " + naam + "?");
+//            behaaldeCijfer = scanner.nextDouble();
+//            scanner.nextLine();
+//            if (i == 0) {
+//                hoogsteCijfer = behaaldeCijfer;
+//                leerling = naam;
+//            } else {
+//                if (behaaldeCijfer > hoogsteCijfer) {
+//                    hoogsteCijfer = behaaldeCijfer;
+//                    leerling = naam;
+//                }
+//            }
+//        }
+//        System.out.println("Het hoogste cijfer is een " + hoogsteCijfer + " en is behaald door " + leerling + ".");
 
-        for (int i = 1; i < 6; i++) {
-            System.out.println("Hoe heet de " + i + "e student?");
-           naam =  scanner.nextLine();
-            System.out.println("Wat was het cijfer van " + naam + "?");
-            behaaldeCijfer = scanner.nextDouble();
-            scanner.nextLine();
-            if (i == 0) {
-                hoogsteCijfer = behaaldeCijfer;
-                leerling = naam;
-            } else {
-                if (behaaldeCijfer > hoogsteCijfer) {
-                    hoogsteCijfer = behaaldeCijfer;
-                    leerling = naam;
-                }
+        // Opdracht 5.6
+        System.out.println("\nOpdracht 5.6");
+
+        for (int i = 0; i < 100; i++) {
+            if ( i % 5 == 0){
+                System.out.println(i + " is deelbaar door 5.");
+                i++;
             }
         }
-        System.out.println("Het hoogste cijfer is een " + hoogsteCijfer + " en is behaald door " + naam + ".");
+
+        // Opdracht 5.7
+        System.out.println("\n Opdracht 5.7");
+
+        boolean doorgaan = true;
+        int getal = 0;
+        int uitslag;
+
+        while (doorgaan) {
+
+            uitslag = getal * getal;
+            System.out.println("Het kwadraat van " + getal + " is " + uitslag);
+            getal++;
+
+            if (uitslag > 1000) {
+                doorgaan = false;
+                System.out.println("einde test");
+            }
+        }
 
 //             Einde PSVM
          }
