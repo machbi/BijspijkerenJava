@@ -1,23 +1,28 @@
 import java.util.Scanner;
 
 public class H6 {
-    Scanner scanner = new Scanner(System.in);
 
-    String userInput;
+
 
     //Opdracht 6.1
-    public static void main(String[] args) {printZinnetje();
-    }
+    public static void main(String[] args) {
+        // Begin PSVM
+        Scanner scanner = new Scanner(System.in);
+        String userInput;
+        printZinnetje();
 
     //Opdracht 6.2
-    System.out.print("Je hebt een onvoldoende gehaald");
-    String zinnetje = scanner.nextLine();
-
-
-    public static void printZinnetje (){
-        System.out.println("Hello World");
-    }
-    public static void printZinnetje (String zinnetje){
-        System.out.println(zinnetje);
-    }
+    System.out.println("Welk zinnetje wilt u printen? ");
+        userInput = scanner.nextLine();
+        printZinnetje(userInput);
+        // Einde PSVM
 }
+
+        public static void printZinnetje () {
+            System.out.println("Hello World");
+        }
+
+        public static void printZinnetje (String zinnetje){
+            System.out.println(zinnetje);
+        }
+    }
